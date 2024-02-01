@@ -1,0 +1,127 @@
+*{
+     margin: 0;
+     padding: 0;
+}
+ body {
+     font-family: sans-serif;
+     font-size: .8rem;
+}
+ p{
+     margin-top: 10px;
+}
+ #main_heading{
+     text-align: center;
+     background: linear-gradient(45deg, #9128be, #3498db);
+     -webkit-background-clip: text;
+     color: transparent;
+     font-size: 2.6rem;
+     margin: 30px 0;
+}
+ .container {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+     gap: 2em;
+     margin: 2em;
+}
+ .card {
+     cursor: pointer;
+     background: rgba(72, 61, 139, 0.9);
+     box-shadow: 0 5px 10px rgba(0,0,0,.2);
+     padding: 1.5em;
+     border-radius: 1em;
+     display: grid;
+     grid-template-columns: 150px 1fr;
+     gap: 1.5em;
+     align-items: center;
+     color: white;
+     font-weight: 100;
+}
+ .card_img {
+     width: 100%;
+     border-radius: 0.4em;
+}
+ h2 {
+     font-size: 1.4rem;
+     font-weight: 700;
+     margin-bottom: 0.25em;
+}
+ .card_title {
+     opacity: 0.7;
+     text-transform: uppercase;
+     margin-bottom: .5em;
+     font-style: oblique;
+     letter-spacing: .7px;
+}
+ .card_details a{
+     font-size: 17px;
+     color: darkblue;
+}
+
+ button {
+     margin: 20px 0;
+     display: inline-block;
+     padding: 7px 20px;
+     font-size: 16px;
+     font-weight: bold;
+     text-align: center;
+     border: none;
+     border-radius: 5px;
+     background-color: #4b165f;
+     color: #fff;
+     transition: background-color 0.3s ease-in-out;
+}
+ button:hover {
+     background-color: #a85dbd;
+     color: #fff;
+}
+ .form {
+     background-color: #f2f2f2;
+     border: 1px solid lightgrey;
+     border-radius: 10px;
+     padding: 0 26px;
+     margin: 20px;
+}
+ .form h1{
+     margin: 20px 0;
+}
+ input[type="text"], input[type="email"], input[type="number"] select, textarea {
+     width: 100%;
+     padding: 12px 3px;
+     border-radius: 5px;
+     border: 1px solid #ccc;
+}
+input::placeholder{
+    padding: 10px;
+}
+ .summary{
+     padding: 20px;
+     display: flex;
+     justify-content: space-around;
+     flex-direction: row-reverse;
+     align-items: center;
+}
+.summary_detail{
+    padding: 0px 10px;
+}
+.summary img{
+    height: 200px;
+    margin-bottom: 10px;
+}
+  .summary_box{
+      margin: 20px;
+  }
+
+   @media screen and (max-width : 450px){
+     .card{
+         grid-template-columns: 1fr;
+    }
+      .summary_box{
+      margin: 5px;
+  }
+
+}
+   @media screen and (max-width : 640px){
+   .summary{
+     flex-direction: column-reverse;
+}
+   }
